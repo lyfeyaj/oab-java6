@@ -64,7 +64,7 @@ function progress() {
             else
                 cecho failed
                 echo -e " [i] Showing the last 5 lines from the logfile ($log)...";
-                tail -n5 "$log"
+                tail -n+5 "$log"
                 exit 1;
             fi
             break 2;
@@ -89,7 +89,7 @@ function progress_loop() {
             else
                 cecho failed
                 echo -e " [i] Showing the last 5 lines from the logfile ($log)...";
-                tail -n5 "$log"
+                tail -n+5 "$log"
                 exit 1;
             fi
             break 1;
